@@ -32,7 +32,7 @@ A modern, responsive website for Tesgeras Sushi restaurant, featuring an interac
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/tesgeras-sushi.git
+git clone https://github.com/Natoli74/tesgera-sushi.git
 ```
 
 2. Open `home (1).html` in your web browser
