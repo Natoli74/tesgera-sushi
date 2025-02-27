@@ -1,0 +1,669 @@
+*{
+  margin: auto;
+  padding: 0;
+}
+html{
+  scroll-behavior:smooth;
+  transition: 1.2s scroll ease;
+}
+/* Add transition effect to the body */
+body {
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out;
+  padding-top: 130px;
+}
+
+/* Apply fade-out effect */
+body.fade-out {
+  opacity: 0;
+}
+
+.container_{
+  padding-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 2%;
+  margin: auto;
+  width: 80%;
+  min-height: 300px;
+  
+}
+
+/*NAV*/
+
+.no-bootstrap-styles .naV {
+font-family: "Montserrat", sans-serif;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-top: 10px;
+padding-bottom: 10px;
+left: 20px;
+right: 5px;
+background-color: white;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 99;
+transition: all 0.3s ease;
+}
+#logo_{
+display: none;
+}
+.no-bootstrap-styles .top-section {
+display: flex;
+align-items: center;
+gap: 25px;
+}
+
+.no-bootstrap-styles .icons_ {
+display: flex;
+align-items: center;
+gap: 15px;
+}
+#git{
+width: 25px;
+height: 25px;
+}
+.no-bootstrap-styles .icons_ img {
+width: 20px;
+height: 20px;
+}
+
+.no-bootstrap-styles .buttonsL {
+display: flex;
+align-items: center;
+justify-content: center;
+justify-content: space-between;
+width: 100%;
+
+}
+
+.no-bootstrap-styles .logo_ {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.no-bootstrap-styles .logo_ img {
+height: 100px;
+vertical-align: middle;
+}
+
+.no-bootstrap-styles .nav-links {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 30%;
+
+
+}
+
+.no-bootstrap-styles .buttonsL a {
+text-decoration: none;
+color: black;
+font-size: 24px;
+transition: all 0.3s ease;
+}
+
+.no-bootstrap-styles .orderOnline_ {
+background-color: #1E4563;
+color: white;
+padding: 8px 15px;
+border-radius: 6px;
+margin: auto 40px auto 0;
+max-width: fit-content;
+
+}
+
+.no-bootstrap-styles .orderOnline_ a {
+color: white;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+display: none;
+flex-direction: column;
+cursor: pointer;
+z-index: 100;
+padding: 5px;
+}
+.hamburger.active{
+min-width: max-content;
+padding: 5px;
+}
+.hamburger div {
+width: 25px;
+height: 3px;
+background-color: black;
+margin: 4px 0;
+transition: 0.4s;
+}
+.orderH:hover{
+  background-color:white ;
+  color: black;
+}
+.logo_:hover{
+  transform: scale(1.1);
+  filter: brightness(1.1);
+  cursor: pointer;
+  transition: transform 0.6s ease; 
+}
+.aHover:hover{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 6px;
+  border-radius: 5px;
+}
+.buttonsL a:hover{
+  transition: transform 0.6s ease;
+  color: white;
+  transition: background-color 0.6s ease, color 0.3s ease;
+}
+  #about{
+    background-color: #000000;
+    color: white;
+    transform: scale(1.1);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  .buttonsL a:active{
+    background-color: #1f73b2;
+  }
+.confbtn:hover, .conf-btn:hover, .checkout-button:hover, .orderOnline_:hover{
+    background-color: #1f73b2;
+    transition: background-color 0.6s ease, color 0.3s ease;
+}
+.starSection {
+    background-color: white;
+    padding-bottom: 50px ;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  .image_{
+    width: 100%; 
+    height: auto;
+    
+  }
+  .image {
+    width: 100%; 
+    height: auto;
+    padding: 10px;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 24px; 
+    text-align: center; 
+    font-weight: bold;
+  }
+.section_1{
+    background-color: #214867 ;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+.image-container1{
+    
+    height: auto;
+    min-width: 50%;
+    position: relative;
+    display: inline-block;
+    
+}
+.image-container1 img{
+  filter: blur(1px) brightness(0.9);
+}
+.text-overlay1 {
+  filter: brightness(1.3);
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    font-family:"Montserrat", sans-serif ;
+  }
+.sHours{
+    min-width: 40vw;
+    text-align: center;
+    
+   
+}
+.sHours p{
+    font-family:"Bellefair", sans-serif ;
+    font-size: clamp(15px, 1.5vw, 30px) ;
+    color: #F2F2F2;
+    max-width: 80%;
+    padding: -1px;
+    line-height:clamp(1.2, 1.4, 1.6) ;
+}
+.sHours h1{
+    padding-top: 0.5%;
+    font-family:"Montserrat", sans-serif ;
+    font-size:clamp(30px , 3vw, 60px) ;
+    color: #ffffff;
+    max-width: 80%;
+    padding-bottom: 2% ;
+
+  
+}
+
+.section_3{
+text-align: center;
+}
+.section_3 .h4_{
+    color: #7a7878;
+    font-size: 22px;
+    padding-bottom: 3%;
+    font-weight: 700;
+    padding-top: 3%;
+}
+.section_3 .aboutP{
+
+    line-height: 1.8;
+    width: 80%;
+    font-size: clamp(18px, 28px, 40px);
+    padding-bottom: 10px;
+}
+.section_3 h1{
+    font-family:"Montserrat", sans-serif ;
+    padding: 3%;
+    
+}
+/*FOOTER*/
+
+.no-bootstrap-styles .footer_{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 10px;
+    margin: auto;
+    background-color:  #214867;
+}
+.no-bootstrap-styles .footer_ p , .footer_ h1 {
+    text-align: center;
+    color: white;
+}
+.no-bootstrap-styles .hr{
+
+    width: 80%;
+    background-color: #000000;
+    margin: auto;
+    height: 6px;
+    border-radius: 1.5rem;
+}
+.no-bootstrap-styles .footer_ .h1 ,.no-bootstrap-styles .hours h1 {
+    margin: auto;
+    padding-top: 1%;
+
+}
+.h1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.no-bootstrap-styles .times{
+    padding-top: 1%;
+
+}
+.no-bootstrap-styles .address_{
+    display: flex;
+    max-width: fit-content;
+}
+.no-bootstrap-styles .address_ p{
+    font-family: "Montserrat", serif;
+    font-size: 23px;
+    font-weight: 300;
+    padding: 0px 10px 0px; 
+    vertical-align: middle;
+    margin-bottom: 0px;
+}
+.no-bootstrap-styles .address_ svg{
+    max-height: min-content;
+}
+.no-bootstrap-styles .times p , .no-bootstrap-styles .hours p {
+    font-family: "Montserrat", serif;
+    font-size: 23px;
+    font-weight: 100;
+    padding: 10px;
+}
+.no-bootstrap-styles .icons_1{
+  display: flex;
+  text-align: center;
+  width: fit-content;
+  margin: 15px auto 15px auto;
+
+}
+.no-bootstrap-styles .icons_1 img{
+  width: 35px;
+  height: 35px;
+  padding: 3px 6px 3px;
+
+}
+.copyright{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 10px;
+}
+.footer_ a:hover{
+  text-decoration: none;
+}
+/* Addition ID stlyings */
+#landing, #chef{
+  font-family: "Montserrat", sans-serif;
+}
+#landing img, #chef img{
+  filter: brightness(0.9);
+ 
+  height: clamp(60vh, 93vh, 93vh);
+}
+#landing .text-overlay , #chef .text-overlay {
+  font-size: clamp(30px, 50px, 100px);
+  width: 80%;
+}
+/* Drop Down Menu */
+@media screen and (max-width: 900px) {
+
+
+  .no-bootstrap-styles .naV {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+  }
+
+  .no-bootstrap-styles .top-section {
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 10px;
+      padding-bottom: 24px;
+  }
+  #logo_{
+    display: block;
+  }
+  #logo_2{
+    display: none;
+    text-align: center;
+  }
+  .no-bootstrap-styles .buttonsL {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      gap: 17px;
+  }
+
+  .no-bootstrap-styles .nav-links {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      gap: 17px;
+  }
+
+  .no-bootstrap-styles .buttonsL.active {
+     padding-top: 45px;
+      display: flex;
+  }
+
+  .no-bootstrap-styles .logo_ {
+      align-self: center;
+      margin: 0 auto;
+  }
+
+  .no-bootstrap-styles .buttonsL a {
+      padding: 10px;
+      width: 100%;
+      text-align: center;
+  }
+  .logo_:hover{
+    transform: scale(1.1);
+    filter: brightness(1.1);
+    cursor: pointer;
+    transition: transform 0.6s ease; 
+  }
+  .hamburger {
+      display: flex;
+      position: relative;
+      width: 50px;
+  }
+
+  .hamburger.active .bar1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .hamburger.active .bar2 {
+      opacity: 0;
+  }
+
+  .hamburger.active .bar3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+  }
+  #logo_{
+    display: block;
+    max-height: 50px;
+    margin-top: -40px;
+    z-index: -1;
+  }
+}
+/* Ipad*/
+@media only screen and (max-width: 899px) and (min-width: 550px){
+
+  body{
+    padding-top: 100px;
+
+  }
+  .section_3 .aboutP{
+    font-size: clamp(15px, 20px, 25px);
+  }
+  #landing img, #chef img{
+    height: clamp(40vh, 60vh, 80vh);
+  }
+  #landing .text-overlay, #chef .text-overlay{
+    font-size: clamp(20px, 30px ,60px );
+  }
+  .section_1{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.image-container1{
+
+    width: 100%;
+
+    
+}
+
+
+.text-overlay1 {
+
+    font-size: 27px;
+
+  }
+
+.sHours p{
+    font-size: 18px ;
+}
+.sHours h1{
+
+    font-size: 32px ;
+
+  
+}
+  /*FOOTER*/
+  .no-bootstrap-styles .footer_ h1{
+    font-size: 25px;
+  }
+  .no-bootstrap-styles .footer_{
+      padding-top: 8px;
+
+  }
+
+  .no-bootstrap-styles .hr{
+      height: 4px;
+      border-radius: 1rem;
+  }
+
+
+  .no-bootstrap-styles .address_ p{
+      font-family: "Montserrat", serif;
+      font-size: 17px;
+      font-weight: 200;
+      padding: 0px 8px 0px; 
+      vertical-align: middle;
+      margin-bottom: 0px;
+  }
+
+  .no-bootstrap-styles .times p , .no-bootstrap-styles .hours p {
+      font-size: 17px;
+      padding: 8px;
+  }
+
+  .copyright{
+    font-size: 11px;
+    font-weight: 200;
+      padding-bottom: 6px;
+  }
+  .no-bootstrap-styles .icons_{
+
+    margin: 12px auto 12px auto;
+
+  }
+  .no-bootstrap-styles .icons_ img{
+    width: 30px;
+    height: 30px;
+    padding: 3px 6px 3px;
+
+  }
+
+
+  }
+/* This is Phone */
+@media only screen and (max-width: 549px) and (min-width: 350px){
+  
+  .section_1{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.section_3 .aboutP{
+  font-size: clamp(12px, 17px, 20px);
+}
+#landing img, #chef img{
+  height: clamp(20vh, 30vh, 40vh);
+}
+#landing .text-overlay, #chef .text-overlay{
+  font-size: clamp(10px, 20px ,50px );
+}
+.image-container1{
+
+    width: 100%;
+
+    
+}
+
+
+.text-overlay1 {
+
+    font-size:clamp(12px, 23px, 25px);
+
+  }
+
+.sHours p{
+  font-size:clamp(8px, 12px, 14px);
+}
+.sHours h1{
+
+  font-size:clamp(20px, 24px, 28px);
+
+  
+}
+.section_2 .text-overlay{
+  width: 90%;
+  font-size:clamp(20px, 24px, 28px);
+}
+.aboutP{
+  font-size:clamp(6px, 8px, 10px);
+}
+.intro1 h1{
+  font-size:clamp(20px, 28px, 40px);
+  ;
+}
+      /*FOOTER*/
+      .no-bootstrap-styles .footer_ h1{
+        font-size: clamp(10px, 20px, 25px);
+      }
+      .no-bootstrap-styles .footer_{
+          padding-top: 8px;
+  
+      }
+  
+      .no-bootstrap-styles .hr{
+          height: 4px;
+          border-radius: 1rem;
+      }
+  
+  
+      .no-bootstrap-styles .address_ p{
+          font-family: "Montserrat", serif;
+          font-size: clamp(8px, 11px, 15px);
+          font-weight: 300;
+          padding: 0px 8px 0px; 
+          vertical-align: middle;
+          margin-bottom: 0px;
+      }
+      .addressLogo{
+        width: 20px;
+        height: 20px;
+        top:0;
+      }
+      .no-bootstrap-styles .times p  {
+        font-size: clamp(8px, 12px, 15px);
+          padding: 5px;
+          
+      }
+  
+      .copyright{
+        font-size: clamp(6px, 8.5px, 12px);
+        font-weight: 200;
+          padding-bottom: 6px;
+      }
+      .no-bootstrap-styles .icons_1{
+  
+        margin: 8px auto 8px auto;
+  
+      }
+      .no-bootstrap-styles .icons_1 img{
+        width: 20px;
+        height: 20px;
+        padding: 2px 4px 2px;
+  
+      }
+}
+@media only screen and (max-width: 1120px) and (min-width: 900px){
+  .no-bootstrap-styles .buttonsL .orderOnline_ a{
+    font-size: clamp(8px, 2.5vw , 17px);
+  }
+  .no-bootstrap-styles .buttonsL .nav-links a{
+    font-size: clamp(8px, 2.5vw , 17px);
+  }
+  }
+  /* This is Extra Big PC */
+  @media screen and(min-width: 3000px) {
+    
+  }
+
+  
+
+
+

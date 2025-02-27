@@ -1,0 +1,794 @@
+*{
+    margin: auto;
+    padding: 0;
+}
+html{
+  scroll-behavior:smooth;
+  transition: 1.2s scroll ease;
+}
+/* Add transition effect to the body */
+body {
+    opacity: 1;
+    transition: opacity 0.6s ease-in-out;
+    padding-top: 130px;
+}
+
+/* Apply fade-out effect */
+body.fade-out {
+    opacity: 0;
+}
+
+.container_{
+    padding-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 2%;
+    margin: auto;
+    width: 80%;
+    min-height: 300px;
+    
+}
+
+/*NAV*/
+
+.no-bootstrap-styles .naV {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  left: 20px;
+  right: 5px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  transition: all 0.3s ease;
+}
+#logo_{
+display: none;
+}
+.no-bootstrap-styles .top-section {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.no-bootstrap-styles .icons_ {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#git{
+  width: 25px;
+  height: 25px;
+}
+.no-bootstrap-styles .icons_ img {
+  width: 20px;
+  height: 20px;
+}
+
+.no-bootstrap-styles .buttonsL {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+ 
+}
+
+.no-bootstrap-styles .logo_ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-bootstrap-styles .logo_ img {
+  height: 100px;
+  vertical-align: middle;
+}
+
+.no-bootstrap-styles .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+ 
+  
+}
+
+.no-bootstrap-styles .buttonsL a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.no-bootstrap-styles .orderOnline_ {
+  background-color: #1E4563;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+  margin: auto 40px auto 0;
+  max-width: fit-content;
+ 
+}
+
+.no-bootstrap-styles .orderOnline_ a {
+  color: white;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 100;
+  padding: 5px;
+}
+.hamburger.active{
+min-width: max-content;
+padding: 5px;
+}
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+  .orderH:hover{
+    background-color:white ;
+    color: black;
+  }
+  .logo_:hover{
+    transform: scale(1.1);
+    filter: brightness(1.1);
+    cursor: pointer;
+    transition: transform 0.6s ease; 
+  }
+  .aHover:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+  }
+  .buttonsL a:hover{
+    transition: transform 0.6s ease;
+    color: white;
+    transition: background-color 0.6s ease, color 0.3s ease;
+  }
+  #home{
+    background-color: #000000;
+    color: white;
+    transform: scale(1.1);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  .buttonsL a:active{
+    background-color: #1f73b2;
+  }
+.confbtn:hover, .conf-btn:hover, .checkout-button:hover, .orderOnline_:hover{
+    background-color: #1f73b2;
+    transition: background-color 0.6s ease, color 0.3s ease;
+}
+
+.starSection {
+    background-color: white;
+}
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(23, 22, 22, 0.5); 
+    z-index: 1; 
+}
+
+.carousel-item {
+  height: clamp(400px, 80vh, 900px);
+  position: relative;
+}
+.carousel-indicators{
+  gap: 10px !important;
+  margin-bottom: 1rem;
+  
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%); 
+}
+
+.carousel-caption {
+  font-family: "Montserrat",sans-serif !important;
+  position: absolute;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+}
+.carousel-item .btn:hover{
+  background-color: #1f73b2;
+}
+.carousel-caption h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin-bottom: 20px;
+}
+
+.carousel-caption p {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  margin-bottom: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 100px !important;
+  height: 100px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  background:none;
+  border-radius: 50% !important;
+}
+
+.carousel-control-prev {
+  left: 20px !important;
+}
+.carousel-caption .btn{
+  background-color: #1E4563;
+  padding: 10px;
+  border: none;
+  font-size: 18px;
+}
+.carousel-control-next {
+  right: 20px !important;
+}
+.carousel-indicators button{
+  width: 30px;
+  height: 5px;
+  border: solid 2px rgb(216, 209, 209) !important;
+  background: none;
+}
+.carousel-indicators .active{
+ filter: brightness(3)  !important;
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .carousel-caption {
+      transform: scale(0.7);
+
+  }
+  .carousel-caption{
+  position: absolute;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;}
+  .carousel-control-prev,
+  .carousel-control-next {
+      width: 30px;
+      height: 30px;
+  }
+}
+.no-bootstrap-styles .hours{
+    background-color:#1E4563 ;
+}
+.no-bootstrap-styles .hours p , .no-bootstrap-styles .hours h1{
+    text-align: center;
+    color: white;
+}
+.no-bootstrap-styles .hours h1{
+    font-size: 50px; 
+    font-weight: 700;
+}
+.no-bootstrap-styles .specials_{
+    padding-top: 4% ;
+    text-align: center;
+    font-family: "Montserrat", serif;
+    font-style:italic;
+    margin: auto;
+    min-height: 300px;
+    background-color: white;
+}
+.specials_ img{
+  filter: blur(4px);
+}
+.no-bootstrap-styles .specials_ .h4_ , .no-bootstrap-styles .menu .h4_{
+    color: #7a7878;
+    font-size: 22px;
+    padding-bottom: 3%;
+    font-weight: bold;
+}
+#menu-section .text-overlay{
+  filter: brightness(1.3);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.menu .h4_{
+    text-align: center;
+}
+.no-bootstrap-styles .specials_ p{
+    color: #000000;
+    font-size: 50px;
+    padding-bottom: 3%;
+    font-weight: 500;
+}
+.no-bootstrap-styles .cards_{
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    padding: 10px;
+    padding-bottom: 3%;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image {
+    object-fit: cover;
+    object-position: center;
+    width: 100%; 
+    height: auto;
+    padding: 10px;
+    min-height: clamp(200px, 40vh, 600px); 
+    max-height: clamp(750px, 80vh, 900px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .image:hover{
+    filter: blur(0px);
+    transform: scale(1.03);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 24px; 
+    text-align: center; 
+    font-weight: bold; 
+  }
+  .menuItems_{
+    transition: transform 0.3s ease, box-shadow 0.3s ease
+  }
+  .menuItems_:hover{
+     box-shadow: 4px 4px 4px rgb(11, 11, 11);
+      filter: brightness(1.1);  
+  } 
+.no-bootstrap-styles .menu{
+    padding: 10px;
+    justify-content: space-around;
+    margin: auto;
+    width: 80%;
+}
+.no-bootstrap-styles .menuItems_ {
+    margin-bottom: 3%;
+    padding: 15px;
+    display: flex;
+    text-align: center;
+    border: solid 0.75px rgb(146, 136, 136) ;
+    border-radius: 10px;
+
+}
+.no-bootstrap-styles .menuItems_ .product{
+  flex-grow: 1;
+    max-height: 10px !important;
+    margin-left: 10px;
+    text-align: left;
+    font-family: "Bellefair", serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+.no-bootstrap-styles .menuItems_ .price{
+    max-height: 10px !important;
+    
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.no-bootstrap-styles .menuButton_{
+    background-color: #214867;
+    margin: auto;
+    text-align: center;
+    max-width: fit-content;
+    border-radius: 7px;
+    padding: 10px;
+
+}
+.menuButton_ a:hover{
+    text-decoration: none;
+}
+.menuButton_:hover{
+    background-color: #1f73b2;
+}
+.no-bootstrap-styles .menuButton_ a{
+    color: #E2D0D0;
+    font-size: 23px;
+    font-family: "Montserrat", serif ;
+    
+    
+}
+
+/*FOOTER*/
+
+.no-bootstrap-styles .footer_{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 10px;
+    margin: auto;
+    background-color:  #214867;
+}
+.no-bootstrap-styles .footer_ p , .footer_ h1 {
+    text-align: center;
+    color: white;
+}
+.no-bootstrap-styles .hr{
+
+    width: 80%;
+    background-color: #000000;
+    margin: auto;
+    height: 6px;
+    border-radius: 1.5rem;
+}
+.no-bootstrap-styles .footer_ .h1 ,.no-bootstrap-styles .hours h1 {
+    margin: auto;
+    padding-top: 1%;
+
+}
+.h1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.no-bootstrap-styles .times{
+    padding-top: 1%;
+
+}
+.no-bootstrap-styles .address_{
+    display: flex;
+    max-width: fit-content;
+}
+.no-bootstrap-styles .address_ p{
+    font-family: "Montserrat", serif;
+    font-size: 23px;
+    font-weight: 300;
+    padding: 0px 10px 0px; 
+    vertical-align: middle;
+    margin-bottom: 0px;
+}
+.no-bootstrap-styles .address_ svg{
+    max-height: min-content;
+}
+.no-bootstrap-styles .times p , .no-bootstrap-styles .hours p {
+    font-family: "Montserrat", serif;
+    font-size: 23px;
+    font-weight: 100;
+    padding: 10px;
+}
+.no-bootstrap-styles .icons_1{
+  display: flex;
+  text-align: center;
+  width: fit-content;
+  margin: 15px auto 15px auto;
+
+}
+.no-bootstrap-styles .icons_1 img{
+  width: 35px;
+  height: 35px;
+  padding: 3px 6px 3px;
+
+}
+.copyright{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 10px;
+}
+.footer_ a:hover{
+  text-decoration: none;
+}
+
+/*Drop DOwn Nav*/
+@media screen and (max-width: 900px) {
+
+
+  .no-bootstrap-styles .naV {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+  }
+
+  .no-bootstrap-styles .top-section {
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 10px;
+      padding-bottom: 24px;
+  }
+  #logo_{
+    display: block;
+  }
+  #logo_2{
+    display: none;
+    text-align: center;
+  }
+  .no-bootstrap-styles .buttonsL {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      gap: 17px;
+  }
+
+  .no-bootstrap-styles .nav-links {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      gap: 17px;
+  }
+
+  .no-bootstrap-styles .buttonsL.active {
+     padding-top: 45px;
+      display: flex;
+  }
+
+  .no-bootstrap-styles .logo_ {
+      align-self: center;
+      margin: 0 auto;
+  }
+
+  .no-bootstrap-styles .buttonsL a {
+      padding: 10px;
+      width: 100%;
+      text-align: center;
+  }
+  .logo_:hover{
+    transform: scale(1.1);
+    filter: brightness(1.1);
+    cursor: pointer;
+    transition: transform 0.6s ease; 
+  }
+  .hamburger {
+      display: flex;
+      position: relative;
+      width: 50px;
+  }
+
+  .hamburger.active .bar1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .hamburger.active .bar2 {
+      opacity: 0;
+  }
+
+  .hamburger.active .bar3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+  }
+  #logo_{
+    display: block;
+    max-height: 50px;
+    margin-top: -40px;
+    z-index: -1;
+  }
+}
+/*Ipad*/
+@media only screen and (max-width: 899px) and (min-width: 550px){
+   
+    body{
+      padding-top: 105px;
+    }
+    .no-bootstrap-styles .specials_ p{
+      font-size: 30px;
+      font-weight: 450;
+  }
+  .no-bootstrap-styles .cards_{
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: space-around space-between;
+    padding: 8px;
+    padding-bottom: 2%;
+  }
+
+  .no-bootstrap-styles .specials_ .h4_ , .no-bootstrap-styles .menu .h4_{
+
+    font-size: 20px;
+    padding-bottom: 2%;
+
+  }
+  .no-bootstrap-styles .menu{
+
+    width: 100%;
+}
+  .no-bootstrap-styles .menuItems_ {
+    margin-bottom: 2%;
+    padding: 12px;
+    display: flex;
+    border-radius: 8px;
+
+}
+.no-bootstrap-styles .menuItems_ .product{
+    margin-left: 0.75rem;
+    font-size: 17px;
+    font-weight: 150;
+}
+.no-bootstrap-styles .menuItems_ .price{
+    margin-left: 38%;
+    font-size: 17px;
+    font-weight: 500;
+}
+    /*FOOTER*/
+  .no-bootstrap-styles .footer_ h1{
+    font-size: 25px;
+  }
+  .no-bootstrap-styles .footer_{
+      padding-top: 8px;
+
+  }
+
+  .no-bootstrap-styles .hr{
+      height: 4px;
+      border-radius: 1rem;
+  }
+
+
+  .no-bootstrap-styles .address_ p{
+      font-family: "Montserrat", serif;
+      font-size: 17px;
+      font-weight: 200;
+      padding: 0px 8px 0px; 
+      vertical-align: middle;
+      margin-bottom: 0px;
+  }
+
+  .no-bootstrap-styles .times p , .no-bootstrap-styles .hours p {
+      font-size: 17px;
+      padding: 8px;
+  }
+
+  .copyright{
+    font-size: 11px;
+    font-weight: 200;
+      padding-bottom: 6px;
+  }
+  .no-bootstrap-styles .icons_{
+
+    margin: 12px auto 12px auto;
+
+  }
+  .no-bootstrap-styles .icons_ img{
+    width: 30px;
+    height: 30px;
+    padding: 3px 6px 3px;
+
+  }
+  }
+/* This is Phone */
+@media only screen and (max-width: 549px) and (min-width: 375px){
+     .carousel-control-next, .carousel-control-prev{
+      display: none !important;
+     } 
+      .no-bootstrap-styles .specials_ p{
+        font-size: 30px;
+        font-weight: 450;
+    }
+    .no-bootstrap-styles .cards_{
+      display: flex;
+      flex-direction: column;
+
+      justify-content: space-around space-between;
+      padding: 8px;
+      padding-bottom: 2%;
+    }
+
+    .no-bootstrap-styles .specials_ .h4_ , .no-bootstrap-styles .menu .h4_{
+
+      font-size: 20px;
+      padding-bottom: 2%;
+
+    }
+    .no-bootstrap-styles .hours h1{
+      font-size:clamp(20px, 30px, 40px); 
+      font-weight: 500;
+  }
+  .no-bootstrap-styles .hours p{
+    font-size:clamp(8px, 15px, 25px); 
+   
+}
+    .no-bootstrap-styles .menu{
+
+      width: 100%;
+    }
+    .no-bootstrap-styles .menuItems_ {
+      margin-bottom: 2%;
+      padding: 12px;
+      display: flex;
+      border-radius: 8px;
+
+    }
+    .no-bootstrap-styles .menuItems_ .product{
+      margin-left: 0.1rem;
+      font-size: clamp(10px,12px,15px);
+      font-weight: 150;
+    }
+    .no-bootstrap-styles .menuItems_ .price{
+      margin-left: 38%;
+      font-size: clamp(10px,12px,15px);
+      font-weight: 500;
+    }
+    .menuButton_{
+      transform: scale(0.75);
+    }
+      /*FOOTER*/
+    .no-bootstrap-styles .footer_ h1{
+      font-size: clamp(10px, 20px, 25px);
+    }
+    .no-bootstrap-styles .footer_{
+        padding-top: 8px;
+
+    }
+
+    .no-bootstrap-styles .hr{
+        height: 4px;
+        border-radius: 1rem;
+    }
+
+
+    .no-bootstrap-styles .address_ p{
+        font-family: "Montserrat", serif;
+        font-size: clamp(8px, 11px, 15px);
+        font-weight: 300;
+        padding: 0px 8px 0px; 
+        vertical-align: middle;
+        margin-bottom: 0px;
+    }
+    .addressLogo{
+      width: 20px;
+      height: 20px;
+      top:0;
+    }
+    .no-bootstrap-styles .times p  {
+      font-size: clamp(8px, 12px, 15px);
+        padding: 5px;
+        
+    }
+
+    .copyright{
+      font-size: clamp(6px, 8.5px, 12px);
+      font-weight: 200;
+        padding-bottom: 6px;
+    }
+    .no-bootstrap-styles .icons_1{
+
+      margin: 8px auto 8px auto;
+
+    }
+    .no-bootstrap-styles .icons_1 img{
+      width: 20px;
+      height: 20px;
+      padding: 2px 4px 2px;
+
+    }
+}
+/* This is Smaller pc */
+@media only screen and (max-width: 1120px) and (min-width: 900px){
+.no-bootstrap-styles .buttonsL .orderOnline_ a{
+  font-size: clamp(8px, 2.5vw , 17px);
+}
+.no-bootstrap-styles .buttonsL .nav-links a{
+  font-size: clamp(8px, 2.5vw , 17px);
+}
+}
+/* This is Extra Big PC */
+@media screen and(min-width: 3000px) {
+  
+}
+
